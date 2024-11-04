@@ -1,0 +1,1987 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RED Cafe!</title>
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link
+      href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/Menu.css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <header class="p-3 sticky-top">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <h1>
+            <i class="fa fa-solid fa-gem fa-2x"></i>
+            <!-- Adjusted size for better visibility -->
+            RUBY Diner!
+            <!-- Adjusted text for better visibility -->
+          </h1>
+        </div>
+
+        <div
+          class="col col-12 col-md-6 mt-3 d-flex justify-content-end justify-content-md-end"
+        >
+          <nav>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a class="text-white text-decoration-none" href="Home.html">
+                  <i class="fas fa-home"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="text-white text-decoration-none" href="Menu.html">
+                  <i class="fas fa-utensils"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="text-white text-decoration-none" href="Cart.html">
+                  <i class="fas fa-shopping-cart"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="text-white text-decoration-none" href="Reservation.html">
+                  <i class="fas fa-calendar-alt"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="text-white text-decoration-none" href="Service.html">
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="text-white text-decoration-none" href="#">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="container-xxl py-5">
+      <div class="container mt-4">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+          <h5
+            class="section-title ff-secondary text-center  fw-normal"
+          >
+            Food Menu
+          </h5>
+          <h1 class="mb-5">Most Popular Items</h1>
+        </div>
+        <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+          <ul
+            class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5"
+          >
+            <li class="nav-item">
+              <a
+                class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active"
+                data-bs-toggle="pill"
+                href="#tab-1"
+              >
+                <i class="fa bx bxs-bowl-rice fa-2x icon-c"></i>
+                <div class="ps-3">
+                  <small class="text-body">Golden Grains</small>
+                  <h6 class="mt-n1 mb-0">Rice Dishes</h6>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="d-flex align-items-center text-start mx-3 pb-3"
+                data-bs-toggle="pill"
+                href="#tab-2"
+              >
+                <i class="fa fa-solid fa-drumstick-bite fa-2x icon-c"></i>
+                <div class="ps-3">
+                  <small class="text-body">Sizzle & Smoke</small>
+                  <h6 class="mt-n1 mb-0">BBQ & Grilled</h6>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="d-flex align-items-center text-start mx-3 me-0 pb-3"
+                data-bs-toggle="pill"
+                href="#tab-3"
+              >
+                <i class="fa bx bxs-drink fa-2x icon-c"></i>
+                <div class="ps-3">
+                  <small class="text-body">Sip & Savor</small>
+                  <h6 class="mt-n1 mb-0">Drinks & Beverages</h6>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="d-flex align-items-center text-start mx-3 me-0 pb-3"
+                data-bs-toggle="pill"
+                href="#tab-4"
+              >
+                <i class="fa bx bxs-leaf fa-2x icon-c"></i>
+                <div class="ps-3">
+                  <small class="text-body">FGarden Fresh</small>
+                  <h6 class="mt-n1 mb-0">Salads & Greens</h6>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="d-flex align-items-center text-start mx-3 me-0 pb-3"
+                data-bs-toggle="pill"
+                href="#tab-5"
+              >
+                <i class="fa bx bx-bowl-hot fa-2x icon-c"></i>
+                <div class="ps-3">
+                  <small class="text-body">Warm & Comforting</small>
+                  <h6 class="mt-n1 mb-0">Soups & Broths</h6>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="d-flex align-items-center text-start mx-3 me-0 pb-3"
+                data-bs-toggle="pill"
+                href="#tab-6"
+              >
+                <i class="fa fa-solid fa-fish fa-2x icon-c"></i>
+                <div class="ps-3">
+                  <small class="text-body">Ocean's Catch</small>
+                  <h6 class="mt-n1 mb-0">Seafoods & Fish</h6>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="d-flex align-items-center text-start mx-3 me-0 pb-3"
+                data-bs-toggle="pill"
+                href="#tab-7"
+              >
+                <i class="fa bx bx-bowl-hot fa-2x icon-c"></i>
+                <div class="ps-3">
+                  <small class="text-body">Twist & Tangle</small>
+                  <h6 class="mt-n1 mb-0">Pasta & Noodles</h6>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="d-flex align-items-center text-start mx-3 me-0 pb-3"
+                data-bs-toggle="pill"
+                href="#tab-8"
+              >
+                <i class="fa fas fa-hamburger fa-2x icon-c"></i>
+                <div class="ps-3">
+                  <small class="text-body">Stack & Bite</small>
+                  <h6 class="mt-n1 mb-0">Burgers & Sandwich</h6>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="d-flex align-items-center text-start mx-3 me-0 pb-3"
+                data-bs-toggle="pill"
+                href="#tab-9"
+              >
+                <i class="fa fa-solid fa-pizza-slice fa-2x icon-c"></i>
+                <div class="ps-3">
+                  <small class="text-body">Crisp & Cheesy</small>
+                  <h6 class="mt-n1 mb-0">Pizza & Flatbreads</h6>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="d-flex align-items-center text-start mx-3 me-0 pb-3"
+                data-bs-toggle="pill"
+                href="#tab-10"
+              >
+                <i class="fa fa-solid fa-stroopwafel fa-2x icon-c"></i>
+                <div class="ps-3">
+                  <small class="text-body">Sweet Indulgence</small>
+                  <h6 class="mt-n1 mb-0">Dessert & Sweets</h6>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+          <div class="tab-content">
+
+            <div id="tab-1" class="tab-pane fade show p-0 active">
+              <!--Food Items-->
+              <div class="row">
+                <!-- Food Item 1 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Biryani.png" alt="Biryani (Sri Lanka)" style="width: 150px">
+                    <h5 class="mb-2">Biryani</h5>
+                    <span class="text-white mb-3">1299/=</span>
+                    <button class="btn btn-glass add-to-cart" data-title="Biryani" data-price="1299" data-image="/Images/Biryani.png">
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                    
+                  </div>
+                </div>
+              
+                <!-- Food Item 2 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Paella.png" alt="Paella (Spain)" style="width: 150px">
+                    <h5 class="mb-2">Paella</h5>
+                    <span class="text-white mb-3">899/=</span>
+                    <button class="btn btn-glass add-to-cart" data-title="Paella" data-price="899" data-image="/Images/Paella.png">
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                    
+                  </div>
+                </div>
+              
+                <!-- Food Item 3 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Risotto.png" alt="Risotto (Italy)" style="width: 150px">
+                    <h5 class="mb-2">Risotto</h5>
+                    <span class="text-white mb-3">999/=</span>
+                    <button class="btn btn-glass add-to-cart" data-title="Risotto" data-price="999" data-image="/Images/Risotto.png">
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 4 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Fried Rice.png" alt="Fried Rice (China)" style="width: 150px">
+                    <h5 class="mb-2">Fried Rice</h5>
+                    <span class="text-white mb-3">1299/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 5 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Bibimbap.png" alt="Bibimbap" style="width: 150px">
+                    <h5 class="mb-2">Bibimbap</h5>
+                    <span class="text-black mb-3">799/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 6 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Jollof.png" alt="Jollof (West Africa)" style="width: 150px">
+                    <h5 class="mb-2">Jollof</h5>
+                    <span class="text-white mb-3">999/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 7 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Dolma.png" alt="Dolma (Middle East)" style="width: 150px">
+                    <h5 class="mb-2">Dolma</h5>
+                    <span class="text-white mb-3">1150/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 8 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Nasi Goreng.png" alt="Nasi Goreng (Indonesia)" style="width: 150px">
+                    <h5 class="mb-2">Nasi Goreng</h5>
+                    <span class="text-white mb-3">1200/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 9 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Congee.png" alt="Congee (China)" style="width: 150px">
+                    <h5 class="mb-2">Congee</h5>
+                    <span class="text-white mb-3">1380/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 10 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Khao Pad.png" alt="Khao Pad (Thailand)" style="width: 150px">
+                    <h5 class="mb-2">Khao Pad</h5>
+                    <span class="text-white mb-3">600/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 11 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Jeera Rice.png" alt="Jeera Rice (India)" style="width: 150px">
+                    <h5 class="mb-2">Jeera Rice</h5>
+                    <span class="text-white mb-3">1400/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 12 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Sambar Rice.png" alt="Sambar Rice (India)" style="width: 150px">
+                    <h5 class="mb-2">Sambar Rice</h5>
+                    <span class="text-white mb-3">300/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Additional food items will automatically start a new row -->
+              </div>
+              
+            </div>
+
+            <div id="tab-2" class="tab-pane fade show p-0">
+              <!--Food Items-->
+              <div class="row">
+                <!-- Food Item 1 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Maple Bourbon.png" alt="Maple Bourbon" style="width: 150px">
+                    <h5 class="mb-2">M Bourbon</h5>
+                    <span class="text-white mb-3">1299/=</span>
+                    <button class="btn btn-glass add-to-cart" data-title="M Bourbon" data-price="1299" data-image="/Images/Maple Bourbon.png">
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 2 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Classic Kanas.png" alt="Classic Kanas" style="width: 150px">
+                    <h5 class="mb-2">C Kanas</h5>
+                    <span class="text-white mb-3">1299/=</span>
+                    <button class="btn btn-glass add-to-cart" data-title="C Kanas" data-price="1299" data-image="/Images/Classic Kanas.png">
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 3 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Garlic Herb.png" alt="Garlic Herb" style="width: 150px">
+                    <h5 class="mb-2">G Herb</h5>
+                    <span class="text-white mb-3">1299/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 4 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Savory Memphis.png" alt="Savory Memphis" style="width: 150px">
+                    <h5 class="mb-2">S Memphis</h5>
+                    <span class="text-white mb-3">1299/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 5 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Tangy Carolina.png" alt="Tangy Carolina" style="width: 150px">
+                    <h5 class="mb-2">Tangy C</h5>
+                    <span class="text-white mb-3">1299/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 6 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Asian Fusion.png" alt="Asian Fusion" style="width: 150px">
+                    <h5 class="mb-2">A Fusion</h5>
+                    <span class="text-white mb-3">1299/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 7 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Spicy Chipotle.png" alt="Spicy Chipotle" style="width: 150px">
+                    <h5 class="mb-2">Chipotle</h5>
+                    <span class="text-white mb-3">1299/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 8 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Zesty Cirtus.png" alt="Zesty Cirtus" style="width: 150px">
+                    <h5 class="mb-2">Z Cirtus</h5>
+                    <span class="text-dark mb-3">1299/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 9 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Pinapple Teriyaki.png" alt="Pinapple Teriyaki" style="width: 150px">
+                    <h5 class="mb-2">Pinapple Teriyaki</h5>
+                    <span class="text-white mb-3">1299/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 10 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Sweet Honey.png" alt="Sweet Honey" style="width: 150px">
+                    <h5 class="mb-2">Sweet Honey</h5>
+                    <span class="text-white mb-3">1299/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 11 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Chipotle.png" alt="Chipotle" style="width: 150px">
+                    <h5 class="mb-2">Chipotle</h5>
+                    <span class="text-white mb-3">1299/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 12 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Hickory.png" alt="Hickory" style="width: 150px">
+                    <h5 class="mb-2">Hickory</h5>
+                    <span class="text-white mb-3">1299/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              </div>
+              
+              
+            </div>
+
+            <div id="tab-3" class="tab-pane fade show p-0">
+              <!--Food Items-->
+              <div class="row">
+                <!-- Food Item 1 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Biryani.png" alt="Biryani (Sri Lanka)" style="width: 150px">
+                    <h5 class="mb-2">Biryani</h5>
+                    <span class="text-white mb-3">1299/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 2 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Paella.png" alt="Paella (Spain)" style="width: 150px">
+                    <h5 class="mb-2">Paella</h5>
+                    <span class="text-white mb-3">899/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 3 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Risotto.png" alt="Risotto (Italy)" style="width: 150px">
+                    <h5 class="mb-2">Risotto</h5>
+                    <span class="text-white mb-3">999/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 4 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Fried Rice.png" alt="Fried Rice (China)" style="width: 150px">
+                    <h5 class="mb-2">Fried Rice</h5>
+                    <span class="text-white mb-3">1299/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 5 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Bibimbap.png" alt="Bibimbap" style="width: 150px">
+                    <h5 class="mb-2">Bibimbap</h5>
+                    <span class="text-black mb-3">799/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 6 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Jollof.png" alt="Jollof (West Africa)" style="width: 150px">
+                    <h5 class="mb-2">Jollof</h5>
+                    <span class="text-white mb-3">999/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 7 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Dolma.png" alt="Dolma (Middle East)" style="width: 150px">
+                    <h5 class="mb-2">Dolma</h5>
+                    <span class="text-white mb-3">1150/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 8 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Nasi Goreng.png" alt="Nasi Goreng (Indonesia)" style="width: 150px">
+                    <h5 class="mb-2">Nasi Goreng</h5>
+                    <span class="text-white mb-3">1200/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 9 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Congee.png" alt="Congee (China)" style="width: 150px">
+                    <h5 class="mb-2">Congee</h5>
+                    <span class="text-white mb-3">1380/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 10 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Khao Pad.png" alt="Khao Pad (Thailand)" style="width: 150px">
+                    <h5 class="mb-2">Khao Pad</h5>
+                    <span class="text-white mb-3">600/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 11 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Jeera Rice.png" alt="Jeera Rice (India)" style="width: 150px">
+                    <h5 class="mb-2">Jeera Rice</h5>
+                    <span class="text-white mb-3">1400/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 12 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Sambar Rice.png" alt="Sambar Rice (India)" style="width: 150px">
+                    <h5 class="mb-2">Sambar Rice</h5>
+                    <span class="text-white mb-3">300/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Additional food items will automatically start a new row -->
+              </div>
+            </div>
+
+            <div id="tab-4" class="tab-pane fade show p-0">
+              <!--Food Items-->
+              <div class="row">
+                <!-- Food Item 1 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Biryani.png" alt="Biryani (Sri Lanka)" style="width: 150px">
+                    <h5 class="mb-2">Biryani</h5>
+                    <span class="text-white mb-3">1299/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 2 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Paella.png" alt="Paella (Spain)" style="width: 150px">
+                    <h5 class="mb-2">Paella</h5>
+                    <span class="text-white mb-3">899/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 3 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Risotto.png" alt="Risotto (Italy)" style="width: 150px">
+                    <h5 class="mb-2">Risotto</h5>
+                    <span class="text-white mb-3">999/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 4 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Fried Rice.png" alt="Fried Rice (China)" style="width: 150px">
+                    <h5 class="mb-2">Fried Rice</h5>
+                    <span class="text-white mb-3">1299/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 5 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Bibimbap.png" alt="Bibimbap" style="width: 150px">
+                    <h5 class="mb-2">Bibimbap</h5>
+                    <span class="text-black mb-3">799/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 6 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Jollof.png" alt="Jollof (West Africa)" style="width: 150px">
+                    <h5 class="mb-2">Jollof</h5>
+                    <span class="text-white mb-3">999/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 7 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Dolma.png" alt="Dolma (Middle East)" style="width: 150px">
+                    <h5 class="mb-2">Dolma</h5>
+                    <span class="text-white mb-3">1150/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 8 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Nasi Goreng.png" alt="Nasi Goreng (Indonesia)" style="width: 150px">
+                    <h5 class="mb-2">Nasi Goreng</h5>
+                    <span class="text-white mb-3">1200/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 9 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Congee.png" alt="Congee (China)" style="width: 150px">
+                    <h5 class="mb-2">Congee</h5>
+                    <span class="text-white mb-3">1380/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 10 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Khao Pad.png" alt="Khao Pad (Thailand)" style="width: 150px">
+                    <h5 class="mb-2">Khao Pad</h5>
+                    <span class="text-white mb-3">600/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 11 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Jeera Rice.png" alt="Jeera Rice (India)" style="width: 150px">
+                    <h5 class="mb-2">Jeera Rice</h5>
+                    <span class="text-white mb-3">1400/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 12 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Sambar Rice.png" alt="Sambar Rice (India)" style="width: 150px">
+                    <h5 class="mb-2">Sambar Rice</h5>
+                    <span class="text-white mb-3">300/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Additional food items will automatically start a new row -->
+              </div>
+            </div>
+
+            <div id="tab-5" class="tab-pane fade show p-0">
+              <!--Food Items-->
+              <div class="row">
+                <!-- Food Item 1 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Biryani.png" alt="Biryani (Sri Lanka)" style="width: 150px">
+                    <h5 class="mb-2">Biryani</h5>
+                    <span class="text-white mb-3">1299/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 2 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Paella.png" alt="Paella (Spain)" style="width: 150px">
+                    <h5 class="mb-2">Paella</h5>
+                    <span class="text-white mb-3">899/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 3 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Risotto.png" alt="Risotto (Italy)" style="width: 150px">
+                    <h5 class="mb-2">Risotto</h5>
+                    <span class="text-white mb-3">999/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 4 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Fried Rice.png" alt="Fried Rice (China)" style="width: 150px">
+                    <h5 class="mb-2">Fried Rice</h5>
+                    <span class="text-white mb-3">1299/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 5 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Bibimbap.png" alt="Bibimbap" style="width: 150px">
+                    <h5 class="mb-2">Bibimbap</h5>
+                    <span class="text-black mb-3">799/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 6 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Jollof.png" alt="Jollof (West Africa)" style="width: 150px">
+                    <h5 class="mb-2">Jollof</h5>
+                    <span class="text-white mb-3">999/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 7 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Dolma.png" alt="Dolma (Middle East)" style="width: 150px">
+                    <h5 class="mb-2">Dolma</h5>
+                    <span class="text-white mb-3">1150/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 8 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Nasi Goreng.png" alt="Nasi Goreng (Indonesia)" style="width: 150px">
+                    <h5 class="mb-2">Nasi Goreng</h5>
+                    <span class="text-white mb-3">1200/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 9 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Congee.png" alt="Congee (China)" style="width: 150px">
+                    <h5 class="mb-2">Congee</h5>
+                    <span class="text-white mb-3">1380/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 10 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Khao Pad.png" alt="Khao Pad (Thailand)" style="width: 150px">
+                    <h5 class="mb-2">Khao Pad</h5>
+                    <span class="text-white mb-3">600/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 11 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Jeera Rice.png" alt="Jeera Rice (India)" style="width: 150px">
+                    <h5 class="mb-2">Jeera Rice</h5>
+                    <span class="text-white mb-3">1400/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 12 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Sambar Rice.png" alt="Sambar Rice (India)" style="width: 150px">
+                    <h5 class="mb-2">Sambar Rice</h5>
+                    <span class="text-white mb-3">300/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Additional food items will automatically start a new row -->
+              </div>
+            </div>
+
+            <div id="tab-6" class="tab-pane fade show p-0">
+              <!--Food Items-->
+              <div class="row">
+                <!-- Food Item 1 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Biryani.png" alt="Biryani (Sri Lanka)" style="width: 150px">
+                    <h5 class="mb-2">Biryani</h5>
+                    <span class="text-white mb-3">1299/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 2 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Paella.png" alt="Paella (Spain)" style="width: 150px">
+                    <h5 class="mb-2">Paella</h5>
+                    <span class="text-white mb-3">899/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 3 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Risotto.png" alt="Risotto (Italy)" style="width: 150px">
+                    <h5 class="mb-2">Risotto</h5>
+                    <span class="text-white mb-3">999/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 4 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Fried Rice.png" alt="Fried Rice (China)" style="width: 150px">
+                    <h5 class="mb-2">Fried Rice</h5>
+                    <span class="text-white mb-3">1299/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 5 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Bibimbap.png" alt="Bibimbap" style="width: 150px">
+                    <h5 class="mb-2">Bibimbap</h5>
+                    <span class="text-black mb-3">799/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 6 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Jollof.png" alt="Jollof (West Africa)" style="width: 150px">
+                    <h5 class="mb-2">Jollof</h5>
+                    <span class="text-white mb-3">999/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 7 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Dolma.png" alt="Dolma (Middle East)" style="width: 150px">
+                    <h5 class="mb-2">Dolma</h5>
+                    <span class="text-white mb-3">1150/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 8 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Nasi Goreng.png" alt="Nasi Goreng (Indonesia)" style="width: 150px">
+                    <h5 class="mb-2">Nasi Goreng</h5>
+                    <span class="text-white mb-3">1200/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 9 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Congee.png" alt="Congee (China)" style="width: 150px">
+                    <h5 class="mb-2">Congee</h5>
+                    <span class="text-white mb-3">1380/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 10 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Khao Pad.png" alt="Khao Pad (Thailand)" style="width: 150px">
+                    <h5 class="mb-2">Khao Pad</h5>
+                    <span class="text-white mb-3">600/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 11 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Jeera Rice.png" alt="Jeera Rice (India)" style="width: 150px">
+                    <h5 class="mb-2">Jeera Rice</h5>
+                    <span class="text-white mb-3">1400/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 12 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Sambar Rice.png" alt="Sambar Rice (India)" style="width: 150px">
+                    <h5 class="mb-2">Sambar Rice</h5>
+                    <span class="text-white mb-3">300/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Additional food items will automatically start a new row -->
+              </div>
+            </div>
+
+            <div id="tab-7" class="tab-pane fade show p-0">
+              <!--Food Items-->
+              <div class="row">
+                <!-- Food Item 1 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Biryani.png" alt="Biryani (Sri Lanka)" style="width: 150px">
+                    <h5 class="mb-2">Biryani</h5>
+                    <span class="text-white mb-3">1299/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 2 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Paella.png" alt="Paella (Spain)" style="width: 150px">
+                    <h5 class="mb-2">Paella</h5>
+                    <span class="text-white mb-3">899/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 3 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Risotto.png" alt="Risotto (Italy)" style="width: 150px">
+                    <h5 class="mb-2">Risotto</h5>
+                    <span class="text-white mb-3">999/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 4 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Fried Rice.png" alt="Fried Rice (China)" style="width: 150px">
+                    <h5 class="mb-2">Fried Rice</h5>
+                    <span class="text-white mb-3">1299/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 5 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Bibimbap.png" alt="Bibimbap" style="width: 150px">
+                    <h5 class="mb-2">Bibimbap</h5>
+                    <span class="text-black mb-3">799/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 6 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Jollof.png" alt="Jollof (West Africa)" style="width: 150px">
+                    <h5 class="mb-2">Jollof</h5>
+                    <span class="text-white mb-3">999/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 7 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Dolma.png" alt="Dolma (Middle East)" style="width: 150px">
+                    <h5 class="mb-2">Dolma</h5>
+                    <span class="text-white mb-3">1150/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 8 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Nasi Goreng.png" alt="Nasi Goreng (Indonesia)" style="width: 150px">
+                    <h5 class="mb-2">Nasi Goreng</h5>
+                    <span class="text-white mb-3">1200/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 9 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Congee.png" alt="Congee (China)" style="width: 150px">
+                    <h5 class="mb-2">Congee</h5>
+                    <span class="text-white mb-3">1380/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 10 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Khao Pad.png" alt="Khao Pad (Thailand)" style="width: 150px">
+                    <h5 class="mb-2">Khao Pad</h5>
+                    <span class="text-white mb-3">600/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 11 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Jeera Rice.png" alt="Jeera Rice (India)" style="width: 150px">
+                    <h5 class="mb-2">Jeera Rice</h5>
+                    <span class="text-white mb-3">1400/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 12 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Sambar Rice.png" alt="Sambar Rice (India)" style="width: 150px">
+                    <h5 class="mb-2">Sambar Rice</h5>
+                    <span class="text-white mb-3">300/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Additional food items will automatically start a new row -->
+              </div>
+            </div>
+
+            <div id="tab-8" class="tab-pane fade show p-0">
+              <!--Food Items-->
+              <div class="row">
+                <!-- Food Item 1 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Biryani.png" alt="Biryani (Sri Lanka)" style="width: 150px">
+                    <h5 class="mb-2">Biryani</h5>
+                    <span class="text-white mb-3">1299/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 2 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Paella.png" alt="Paella (Spain)" style="width: 150px">
+                    <h5 class="mb-2">Paella</h5>
+                    <span class="text-white mb-3">899/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 3 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Risotto.png" alt="Risotto (Italy)" style="width: 150px">
+                    <h5 class="mb-2">Risotto</h5>
+                    <span class="text-white mb-3">999/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 4 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Fried Rice.png" alt="Fried Rice (China)" style="width: 150px">
+                    <h5 class="mb-2">Fried Rice</h5>
+                    <span class="text-white mb-3">1299/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 5 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Bibimbap.png" alt="Bibimbap" style="width: 150px">
+                    <h5 class="mb-2">Bibimbap</h5>
+                    <span class="text-black mb-3">799/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 6 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Jollof.png" alt="Jollof (West Africa)" style="width: 150px">
+                    <h5 class="mb-2">Jollof</h5>
+                    <span class="text-white mb-3">999/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 7 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Dolma.png" alt="Dolma (Middle East)" style="width: 150px">
+                    <h5 class="mb-2">Dolma</h5>
+                    <span class="text-white mb-3">1150/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 8 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Nasi Goreng.png" alt="Nasi Goreng (Indonesia)" style="width: 150px">
+                    <h5 class="mb-2">Nasi Goreng</h5>
+                    <span class="text-white mb-3">1200/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 9 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Congee.png" alt="Congee (China)" style="width: 150px">
+                    <h5 class="mb-2">Congee</h5>
+                    <span class="text-white mb-3">1380/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 10 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Khao Pad.png" alt="Khao Pad (Thailand)" style="width: 150px">
+                    <h5 class="mb-2">Khao Pad</h5>
+                    <span class="text-white mb-3">600/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 11 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Jeera Rice.png" alt="Jeera Rice (India)" style="width: 150px">
+                    <h5 class="mb-2">Jeera Rice</h5>
+                    <span class="text-white mb-3">1400/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 12 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Sambar Rice.png" alt="Sambar Rice (India)" style="width: 150px">
+                    <h5 class="mb-2">Sambar Rice</h5>
+                    <span class="text-white mb-3">300/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Additional food items will automatically start a new row -->
+              </div>
+            </div>
+
+            <div id="tab-9" class="tab-pane fade show p-0">
+              <!--Food Items-->
+              <div class="row">
+                <!-- Food Item 1 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Biryani.png" alt="Biryani (Sri Lanka)" style="width: 150px">
+                    <h5 class="mb-2">Biryani</h5>
+                    <span class="text-white mb-3">1299/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 2 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Paella.png" alt="Paella (Spain)" style="width: 150px">
+                    <h5 class="mb-2">Paella</h5>
+                    <span class="text-white mb-3">899/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 3 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Risotto.png" alt="Risotto (Italy)" style="width: 150px">
+                    <h5 class="mb-2">Risotto</h5>
+                    <span class="text-white mb-3">999/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 4 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Fried Rice.png" alt="Fried Rice (China)" style="width: 150px">
+                    <h5 class="mb-2">Fried Rice</h5>
+                    <span class="text-white mb-3">1299/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 5 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Bibimbap.png" alt="Bibimbap" style="width: 150px">
+                    <h5 class="mb-2">Bibimbap</h5>
+                    <span class="text-black mb-3">799/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 6 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Jollof.png" alt="Jollof (West Africa)" style="width: 150px">
+                    <h5 class="mb-2">Jollof</h5>
+                    <span class="text-white mb-3">999/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 7 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Dolma.png" alt="Dolma (Middle East)" style="width: 150px">
+                    <h5 class="mb-2">Dolma</h5>
+                    <span class="text-white mb-3">1150/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 8 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Nasi Goreng.png" alt="Nasi Goreng (Indonesia)" style="width: 150px">
+                    <h5 class="mb-2">Nasi Goreng</h5>
+                    <span class="text-white mb-3">1200/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 9 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Congee.png" alt="Congee (China)" style="width: 150px">
+                    <h5 class="mb-2">Congee</h5>
+                    <span class="text-white mb-3">1380/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 10 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Khao Pad.png" alt="Khao Pad (Thailand)" style="width: 150px">
+                    <h5 class="mb-2">Khao Pad</h5>
+                    <span class="text-white mb-3">600/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 11 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Jeera Rice.png" alt="Jeera Rice (India)" style="width: 150px">
+                    <h5 class="mb-2">Jeera Rice</h5>
+                    <span class="text-white mb-3">1400/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 12 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Sambar Rice.png" alt="Sambar Rice (India)" style="width: 150px">
+                    <h5 class="mb-2">Sambar Rice</h5>
+                    <span class="text-white mb-3">300/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Additional food items will automatically start a new row -->
+              </div>
+            </div>
+
+            <div id="tab-10" class="tab-pane fade show p-0">
+              <!--Food Items-->
+              <div class="row">
+                <!-- Food Item 1 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Biryani.png" alt="Biryani (Sri Lanka)" style="width: 150px">
+                    <h5 class="mb-2">Biryani</h5>
+                    <span class="text-white mb-3">1299/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 2 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Paella.png" alt="Paella (Spain)" style="width: 150px">
+                    <h5 class="mb-2">Paella</h5>
+                    <span class="text-white mb-3">899/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 3 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Risotto.png" alt="Risotto (Italy)" style="width: 150px">
+                    <h5 class="mb-2">Risotto</h5>
+                    <span class="text-white mb-3">999/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 4 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Fried Rice.png" alt="Fried Rice (China)" style="width: 150px">
+                    <h5 class="mb-2">Fried Rice</h5>
+                    <span class="text-white mb-3">1299/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 5 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Bibimbap.png" alt="Bibimbap" style="width: 150px">
+                    <h5 class="mb-2">Bibimbap</h5>
+                    <span class="text-black mb-3">799/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 6 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Jollof.png" alt="Jollof (West Africa)" style="width: 150px">
+                    <h5 class="mb-2">Jollof</h5>
+                    <span class="text-white mb-3">999/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 7 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Dolma.png" alt="Dolma (Middle East)" style="width: 150px">
+                    <h5 class="mb-2">Dolma</h5>
+                    <span class="text-white mb-3">1150/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 8 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Nasi Goreng.png" alt="Nasi Goreng (Indonesia)" style="width: 150px">
+                    <h5 class="mb-2">Nasi Goreng</h5>
+                    <span class="text-white mb-3">1200/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 9 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Congee.png" alt="Congee (China)" style="width: 150px">
+                    <h5 class="mb-2">Congee</h5>
+                    <span class="text-white mb-3">1380/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 10 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Khao Pad.png" alt="Khao Pad (Thailand)" style="width: 150px">
+                    <h5 class="mb-2">Khao Pad</h5>
+                    <span class="text-white mb-3">600/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 11 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Jeera Rice.png" alt="Jeera Rice (India)" style="width: 150px">
+                    <h5 class="mb-2">Jeera Rice</h5>
+                    <span class="text-white mb-3">1400/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Food Item 12 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 my-2 d-flex align-items-center justify-content-center">
+                  <div class="d-flex flex-column align-items-center text-center glass-container m-2">
+                    <img class="img-fluid rounded mb-3 animated-image" src="/Images/Sambar Rice.png" alt="Sambar Rice (India)" style="width: 150px">
+                    <h5 class="mb-2">Sambar Rice</h5>
+                    <span class="text-white mb-3">300/=</span>
+                    <button class="btn btn-glass">
+                      <i class="fas fa-cart-plus"></i> <!-- Font Awesome icon for a shopping cart -->
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Additional food items will automatically start a new row -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="back-to-top-container">
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top">
+          <i class="bi bi-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+
+        <!-- Footer -->
+        <footer class="text-center text-lg-start text-muted footer">
+          <!-- Section: Social media -->
+          <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+              <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+        
+            <!-- Right -->
+            <div>
+              <a href="" class="me-4 text-reset">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <!-- Right -->
+          </section>
+          <!-- Section: Social media -->
+        
+          <!-- Section: Links  -->
+          <section class="">
+            <div class="container text-center text-md-start mt-5">
+              <!-- Grid row -->
+              <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                  <!-- Content -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    <i class="fas fa-gem me-3"></i>Company name
+                  </h6>
+                  <p>
+                    Here you can use rows and columns to organize your footer
+                    content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit.
+                  </p>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+                  <p>
+                    <a href="#!" class="text-reset">Angular</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">React</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Vue</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Laravel</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+                  <p>
+                    <a href="#!" class="text-reset">Pricing</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Settings</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Orders</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Help</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                  <p><i class="fas fa-home me-3"></i> Akkaraipattu, 32400, SL</p>
+                  <p>
+                    <i class="fas fa-envelope me-3"></i>
+                    codexhmd.com
+                  </p>
+                  <p><i class="fas fa-phone me-3"></i> + 94 76 601 6438</p>
+                  <p><i class="fas fa-print me-3"></i> + 94 76 601 6438</p>
+                </div>
+                <!-- Grid column -->  
+              </div>
+              <!-- Grid row -->
+            </div>
+          </section>
+          <!-- Section: Links  -->
+        
+          <!-- Copyright -->
+          <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
+            © 2024 Copyright:
+            <a class="text-reset fw-bold" href="#">CODE X HMD</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+        
+    <!-- Back to Top -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        function addToCart(item) {
+          let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+  
+          // Check if the item already exists in the cart
+          const existingItemIndex = cartItems.findIndex(cartItem => cartItem.title === item.title);
+  
+          if (existingItemIndex === -1) {
+            // Item does not exist, add it to the cart
+            cartItems.push(item);
+            localStorage.setItem('cartItems', JSON.stringify(cartItems));
+            // Optionally show a confirmation message (e.g., using a toast or a small notification)
+            console.log(`"${item.title}" has been added to the cart.`);
+          }
+        }
+  
+        // Add event listeners to all "Add to Cart" buttons
+        document.querySelectorAll('.btn-glass').forEach(button => {
+          button.addEventListener('click', function() {
+            const itemTitle = this.closest('.glass-container').querySelector('h5').textContent;
+            const itemImage = this.closest('.glass-container').querySelector('img').src;
+            const itemPrice = parseFloat(this.closest('.glass-container').querySelector('.text-white').textContent.replace('/=', '').trim());
+  
+            const item = {
+              title: itemTitle,
+              image: itemImage,
+              price: itemPrice,
+              quantity: 1
+            };
+  
+            addToCart(item);
+          });
+        });
+      });
+
+
+      document.addEventListener("DOMContentLoaded", function() {
+  const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+  addToCartButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const title = this.getAttribute('data-title');
+      const price = this.getAttribute('data-price');
+      const image = this.getAttribute('data-image');
+      const category = this.getAttribute('data-category');
+
+      const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+      const existingItemIndex = cartItems.findIndex(item => item.title === title);
+
+      if (existingItemIndex !== -1) {
+        cartItems[existingItemIndex].quantity += 1;
+      } else {
+        cartItems.push({
+          title: title,
+          price: price,
+          image: image,
+          category: category,
+          quantity: 1
+        });
+      }
+
+      localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+      alert(`${title} has been added to the cart.`);
+    });
+  });
+});
+    </script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>
+ 
+  
+  
+  
+  
+  
+  
+   

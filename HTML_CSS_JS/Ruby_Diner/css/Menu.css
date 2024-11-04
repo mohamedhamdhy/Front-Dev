@@ -1,0 +1,463 @@
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width:100%;
+    overflow-x:hidden;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    perspective: 1000px;
+    background: #FFEFBA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+
+/* Header */
+header {
+    position: relative;
+    background: #200122;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    backdrop-filter: blur(10px); /* Blurring the background */
+    -webkit-backdrop-filter: blur(20px); /* For Safari support */
+    border-bottom: 10px solid red; /* Remove the solid border if necessary */
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+}
+
+
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    color: red;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5), 0 0 25px rgba(255, 0, 0, 0.6), 0 0 5px darkred;
+    display: flex;
+    align-items: center; /* Vertically centers the text and icon */
+}
+
+header h1 i {
+    margin-right: 10px; /* Adds space between the icon and the text */
+    color: red; /* Adjust icon color as needed */
+}
+
+
+
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+header nav ul li a {
+    font-size: 1.1rem;
+    color: green;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+header nav ul li a i {
+    color: red;
+    margin-right: 35px;
+    margin-top: 20px;
+    transition: box-shadow 0.3s, transform 0.3s;
+    scale: 1.5;
+}
+
+header nav ul li a i.active {
+    color: white;
+}
+
+header nav ul li a:hover {
+    transform: translateZ(20px) rotateY(15deg);
+
+    color: #ffcc00;
+}
+
+header nav ul li a:hover i {
+    color: red;
+    transform: scale(1.5);
+
+}
+
+/********** Template CSS **********/
+:root {
+    --primary: #FEA116;
+    --light: #F1F8FF;
+    --dark: #0F172B;
+}
+
+.ff-secondary {
+    font-family: 'Pacifico', cursive;
+}
+
+.fw-medium {
+    font-weight: 600 !important;
+}
+
+.fw-semi-bold {
+    font-weight: 700 !important;
+}
+
+
+
+
+/*** Spinner ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Icon */
+.icon-c {
+    background: #200122;  /* Fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6f0000, #200122); /* Modern browsers */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the icon transparent so the gradient shows */
+    font-size: 2em; /* Adjust font size as needed */
+}
+
+
+/* Container for the glass effect */
+.glass-container {
+    position: relative;
+    overflow: hidden; /* Ensure content doesn't overflow */
+    width: 300px; /* Adjust width as needed */
+    height: 300px; /* Fixed height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #200122; /* Fallback color */
+    background: -webkit-linear-gradient(to right, #6f0000, #200122); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 15px; /* Rounded corners */
+    backdrop-filter: blur(10px); /* Apply a blur effect */
+    border-image: linear-gradient(to right, #6f0000, #200122); /* Gradient border */
+    border-image-slice: 1; /* Stretch the gradient to cover the border */
+    box-shadow: 0 0 10px rgba(111, 0, 0, 0.7), 0 0 20px rgba(32, 1, 34, 0.5);
+    transition: all 0.5s ease-in-out; /* Smooth transition for all properties */
+}
+
+.glass-container:hover {
+    background: #200122; /* Fallback color */
+    background: -webkit-linear-gradient(to left, #6f0000, #200122); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+/* Style for the animated image */
+.glass-container .animated-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the image initially */
+    transition: transform 0.5s ease-in-out; /* Smooth image movement */
+    z-index: 4; /* Start with the highest z-index */
+}
+
+/* Style for the title, price, and button */
+.glass-container h5,
+.glass-container span,
+.glass-container .btn {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Offset from initial position */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Smooth transitions for opacity and movement */
+    position: relative;
+}
+
+/* Hover effect for the image */
+.glass-container:hover .animated-image {
+    transform: translate(-50%, -90%) scale(1.05); /* Move image up on hover */
+    z-index: 4; /* Keep image on top */
+}
+
+/* Hover effect for the title */
+.glass-container:hover h5 {
+    opacity: 1; /* Make title visible */
+    transform: translateY(70px); /* Move title down */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transition-delay: 0.25s; /* Delay title animation after image */
+    z-index: 3; /* Place title below image */
+}
+
+/* Hover effect for the price */
+.glass-container:hover span {
+    opacity: 1; /* Make price visible */
+    transform: translateY(70px); /* Move price down */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transition-delay: 0.5s; /* Delay price animation after title */
+    z-index: 2; /* Place price below title */
+}
+
+/* Hover effect for the button */
+.glass-container:hover .btn {
+    opacity: 1; /* Make button visible */
+    transform: translateY(70px); /* Move button to bottom */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transition-delay: 0.75s; /* Delay button animation after price */
+    z-index: 1; /* Place button below price */
+}
+
+/* Style for the button */
+.glass-container .btn {
+    margin-top: 10px; /* Space above the button */
+    transform: translateY(20px); /* Center button initially */
+    transition: transform 0.5s ease-in-out; /* Smooth transition for movement */
+}
+
+/* Style for the glass effect button */
+.glass-container .btn-glass {
+    background: linear-gradient(#6f0000, #200122); /* Gradient background */
+    border: none; /* Remove default border */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding inside the button */
+    border-radius: 5px; /* Rounded corners */
+    transition: background 0.7s ease, color 0.7s ease, transform 0.5s ease-in-out; /* Smooth transition for background, color, and movement */
+}
+
+/* Hover effect for the glass effect button */
+.glass-container .btn-glass:hover {
+    color: #fff; /* Text color on hover */
+    background: #200122;  /* Fallback background color */
+    background: -webkit-linear-gradient(to left, #6f0000, #200122);  /* Gradient for older browsers */
+    background: linear-gradient(to left, #6f0000, #200122); /* Gradient for modern browsers */
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.8); /* Neon glow effect */
+    opacity: 0.9; /* Slightly transparent background */
+}
+ 
+
+
+/*** Section Title ***/
+.section-title {
+    position: relative;
+    display: inline-block;
+    color: #6f0000;
+}
+
+.section-title::before {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    left: -55px;
+    margin-top: -1px;
+    background: red;
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    right: -55px;
+    margin-top: -1px;
+    background: red;
+}
+
+.section-title.text-start::before,
+.section-title.text-end::after {
+    display: none;
+}
+
+
+/*** Service ***/
+.service-item {
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    transition: .5s;
+}
+
+.service-item:hover {
+    background: var(--primary);
+}
+
+.service-item * {
+    transition: .5s;
+}
+
+.service-item:hover * {
+    color: var(--light) !important;
+}
+
+
+/*** Food Menu ***/
+.nav-pills .nav-item .active {
+    position: relative; /* Positioning context for pseudo-element */
+    padding-bottom: 5px; /* Adjust if needed to make room for the pseudo-element */
+}
+
+.nav-pills .nav-item .active::after {
+    content: ''; /* No text content needed */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Match the border thickness */
+    background: #200122;  /* Fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6f0000, #200122); /* Modern browsers */
+    z-index: -1; /* Ensure it is behind the text */
+}
+
+
+/*** Footer ***/
+footer {
+    background: #200122;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    backdrop-filter: blur(10px); /* Blurring the background */
+    -webkit-backdrop-filter: blur(20px); /* For Safari support */
+    backdrop-filter: blur(10px);
+    border-radius: 10px 10px 0 0;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    border-top: 10px solid red;
+}
+
+
+@media (max-width: 1440px) {
+    footer {
+        position: absolute;
+    }
+}
+
+footer p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+footer ul li a {
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 576px) {
+    .cart-item {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .cart-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .cart-item-content {
+        padding: 5px;
+    }
+
+    footer {
+        position: static;
+    }
+}
+
+/* Small Devices (Tablets) */
+@media (max-width: 768px) {
+    .cart-item {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .cart-item img,
+    .cart-item-content {
+        width: 100%;
+    }
+}
+
+.container-xxl {
+    width: 100%;
+    max-width: 100vw; /* Ensures the container does not exceed the viewport width */
+    margin: 0 auto; /* Centers the container if it has a max-width */
+    box-sizing: border-box; /* Includes padding and border in the element's total width */
+    padding: 0; /* Remove any default padding*/
+    
+}
+.mt-4{
+    width: 100%;
+    max-width: 100vw; /* Ensures the container does not exceed the viewport width */
+    margin: 0 auto; /* Centers the container if it has a max-width */
+    box-sizing: border-box; /* Includes padding and border in the element's total width */
+    padding: 0; /* Remove any default padding*/
+}
+
+.back-to-top-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+    width: 100%;            /* Full width of the parent */
+    height: 100%;           /* Full height of the parent */
+    margin-top: 20px;       /* Optional: space above the button */
+    padding-bottom: 20px;   /* Optional: space below the button */
+  }
+  
+  .back-to-top {
+    border-radius: 50%;
+    padding: 10px 15px;        /* Adjust size */
+    text-align: center;
+    font-size: 24px;           /* Adjust icon size */
+  }
+  
+
+
+
+/* Define the keyframes for the rotation animation */
+/* Define the keyframes for the rotation animation */
+@keyframes rotate {
+    from {
+      transform: rotateZ(0deg);
+    }
+    to {
+      transform: rotateZ(360deg);
+    }
+  }
+  
+  /* Apply the animation to the image */
+  .rotating-image {
+    animation: rotate 10s linear infinite;
+  }
+  
+  
+  

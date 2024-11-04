@@ -1,0 +1,131 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width:100%;
+    overflow-x:hidden;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    perspective: 1000px;
+    background: #FFEFBA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+
+/* Header */
+header {
+    position: relative;
+    background: #200122;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    backdrop-filter: blur(10px); /* Blurring the background */
+    -webkit-backdrop-filter: blur(20px); /* For Safari support */
+    border-bottom: 10px solid red; /* Remove the solid border if necessary */
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+
+}
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    color: red;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5), 0 0 25px rgba(255, 0, 0, 0.6), 0 0 5px darkred;
+    display: flex;
+    align-items: center; /* Vertically centers the text and icon */
+}
+header h1 i {
+    margin-right: 10px; /* Adds space between the icon and the text */
+    color: red; /* Adjust icon color as needed */
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+header nav ul li {
+    display: inline-block;
+    margin-right: 25px;
+}
+header nav ul li a {
+    font-size: 1.1rem;
+    color: green;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+header nav ul li a i {
+    color: red;
+    margin-right: 35px;
+    margin-top: 20px;
+    transition: box-shadow 0.3s, transform 0.3s;
+    scale: 1.5;
+}
+header nav ul li a i.active {
+    color: white;
+}
+header nav ul li a:hover {
+    transform: translateZ(20px) rotateY(15deg);
+
+    color: #ffcc00;
+}
+header nav ul li a:hover i {
+    color: red;
+    transform: scale(1.5);
+}
+
+
+
+
+
+/*** Footer ***/
+footer {
+    background: #200122;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    backdrop-filter: blur(10px); /* Blurring the background */
+    -webkit-backdrop-filter: blur(20px); /* For Safari support */
+    backdrop-filter: blur(10px);
+    border-radius: 10px 10px 0 0;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    border-top: 10px solid red;
+}
+
+
+@media (max-width: 1440px) {
+    footer {
+        position: absolute;
+    }
+}
+
+footer p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+footer ul li a {
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #ffcc00;
+}

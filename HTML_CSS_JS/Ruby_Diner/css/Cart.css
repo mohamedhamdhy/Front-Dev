@@ -1,0 +1,278 @@
+/********** Template CSS **********/
+:root {
+    --primary: #FEA116;
+    --light: #F1F8FF;
+    --dark: #0F172B;
+}
+
+.ff-secondary {
+    font-family: 'Pacifico', cursive;
+}
+
+.fw-medium {
+    font-weight: 600 !important;
+}
+
+.fw-semi-bold {
+    font-weight: 700 !important;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width:100%;
+    overflow-x:hidden;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    perspective: 1000px;
+    background: #FFEFBA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+
+/* Header */
+header {
+    position: relative;
+    background: #200122;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    backdrop-filter: blur(10px); /* Blurring the background */
+    -webkit-backdrop-filter: blur(20px); /* For Safari support */
+    border-bottom: 10px solid red; /* Remove the solid border if necessary */
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+}
+
+
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    color: red;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5), 0 0 25px rgba(255, 0, 0, 0.6), 0 0 5px darkred;
+    display: flex;
+    align-items: center; /* Vertically centers the text and icon */
+}
+
+header h1 i {
+    margin-right: 10px; /* Adds space between the icon and the text */
+    color: red; /* Adjust icon color as needed */
+}
+
+
+
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+header nav ul li a {
+    font-size: 1.1rem;
+    color: green;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+header nav ul li a i {
+    color: red;
+    margin-right: 35px;
+    margin-top: 20px;
+    transition: box-shadow 0.3s, transform 0.3s;
+    scale: 1.5;
+}
+
+header nav ul li a i.active {
+    color: white;
+}
+
+header nav ul li a:hover {
+    transform: translateZ(20px) rotateY(15deg);
+
+    color: #ffcc00;
+}
+
+header nav ul li a:hover i {
+    color: red;
+    transform: scale(1.5);
+
+}
+
+.glass-container {
+background: rgba(255, 255, 255, 0.1);
+border-radius: 20px;
+box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border: 1px solid rgba(255, 255, 255, 0.18);
+padding: 20px;
+width: 100%;
+}
+
+.glass-box {
+background: transparent;
+border-radius: 15px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+padding: 20px;
+margin-bottom: 20px;
+}
+
+.glass-box.cart-items {
+overflow-y: auto;
+max-height: 500px;
+background-color: #1f1c18;
+}
+
+.cart-item {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 10px;
+border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cart-item img {
+width: 60px; /* Reduced size */
+height: 60px;
+object-fit: cover;
+border-radius: 10px;
+margin-bottom: 10px;
+}
+
+.cart-item h5, 
+.cart-item p, 
+.cart-item .quantity-controls, 
+.cart-item .remove-item {
+margin: 5px 0;
+}
+
+.cart-item .quantity-controls {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.cart-item .quantity-controls button, 
+.cart-item .remove-item {
+background-color: rgba(255, 255, 255, 0.2);
+border: 1px solid #fff;
+color: #fff;
+padding: 5px 10px;
+}
+
+.cart-item .quantity-controls button:hover, 
+.cart-item .remove-item:hover {
+background-color: rgba(255, 255, 255, 0.3);
+}
+
+.cart-item .remove-item {
+background-color: rgba(255, 0, 0, 0.8);
+}
+
+.cart-items::-webkit-scrollbar {
+width: 8px;
+}
+
+.cart-items::-webkit-scrollbar-thumb {
+background-color: rgba(255, 255, 255, 0.3);
+border-radius: 4px;
+}
+
+.total-price {
+font-size: 1.5rem;
+font-weight: 700;
+margin-top: 20px;
+color: #fff;
+}
+
+.payment-options h4, 
+.payment-options label {
+color: #fff;
+}
+
+.payment-button button, 
+.visit-menu-button button {
+background-color: rgba(0, 123, 255, 0.8);
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+color: white;
+cursor: pointer;
+width: 100%;
+}
+
+.payment-button button:hover, 
+.visit-menu-button button:hover {
+background-color: rgba(0, 123, 255, 1);
+}
+
+
+
+
+
+
+
+
+
+/*** Footer ***/
+footer {
+    background: #200122;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    backdrop-filter: blur(10px); /* Blurring the background */
+    -webkit-backdrop-filter: blur(20px); /* For Safari support */
+    backdrop-filter: blur(10px);
+    border-radius: 10px 10px 0 0;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    border-top: 10px solid red;
+}
+
+
+@media (max-width: 1440px) {
+    footer {
+        position: absolute;
+    }
+}
+
+footer p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+footer ul li a {
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #ffcc00;
+}
